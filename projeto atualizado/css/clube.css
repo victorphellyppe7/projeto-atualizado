@@ -1,0 +1,115 @@
+.fundo {
+    background-image: url("../imagens/clube do livro.jpg");
+	background-color: #09ACDB;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100%;
+}
+.fundo2 {
+    background-image: url("../imagens/clube do livro2.jpg");
+	background-repeat: repeat;
+	height: 50%;
+}
+
+.fundo3 {
+    background-image: url("../imagens/clube do livro3.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100%;
+}
+
+.fundo4 {
+    background-image: url("../imagens/clube do livro4.jpg");
+	background-repeat: no-repeat;
+	height: 100%;
+	background-size: cover;
+}
+
+.fundo5 {
+    background-image: url("../imagens/clube do livro5.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100%;
+}
+
+#menu ul {
+	padding:30px;
+    margin:0px;
+    text-align: center;
+    list-style:none;
+	
+}
+
+.Tamletra{
+	color:red;
+	font-size: 25px;
+	
+}
+.direita{
+	float:right;
+	width:45%;
+}
+#missao{
+	position: relative;
+	background-color:#EDEDED;
+	width: 1000px;
+    padding: 50px;
+    margin: 30px;
+}
+.geral{
+	position: relative;
+	
+	background-color:#EDEDED;
+	width: 260px;
+    padding: 50px;
+    margin: 50px;
+}
+.geral1{
+	background-color:#EDEDED;
+	width: 1100px;
+    padding: 50px;
+    margin: 50px;
+}
+.product{
+	position: relative;
+	background-color:#EDEDED;
+	width: 1000px;
+    padding: 50px;
+    margin: 50px;
+}
+
+.imagemL {
+	width: 103px;
+	height: 147px;
+}
+
+.retirarHyperlink {
+	text-decoration:none;
+	color: black;
+}
+
+#menu ul li { 
+display: inline;
+}
+
+#menu ul li:hover{
+background-color: #c0c0c0;
+
+}
+
+.links{
+	display: inline;
+    color: #B23AEE;
+	padding: 50px;
+	text-decoration: none;
+}
+
+#roda {
+	position: absolute;
+    color: #000;
+	bottom: 8px;
+    left: 16px;
+    font-size: 25px;
+	
+	
+}
