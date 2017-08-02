@@ -1,40 +1,56 @@
-<?php
 
-include("nav/header.php");
-?> 
+<!DOCTYPE html>
+<html>
+    <head>
+        <META charset="UTF-8"> 
+        <title>Clube do Livro </title>
+        <link href="css/clube.css" rel="stylesheet">
+        <script type="text/javascript">
+            function validacao(){
+                if (document.cad.nome.value=="") {
+                    alert( "Verifique o campo nome.");
+                    document.cad.nome.focus();
+                    return false;
+                }
+            } 
+        </script>
+        <style>
+ label{
+ display: block;
+ }
+ </style>
+    </head>
 
-
-
-
+    <body class="fundo">
+    
+        
     	       
   
   
 
-<form name="cadastro" method="post" action="cadastrando.php">
+<form name="cad" method="post" action="cadastrando.php" onsubmit="validacao()">
 
- <h1 class="Tamletra">Cadastro Usuário</h1>
-<fieldset style="width:50px;">
-
-            <input type="text" size="55" name="nome" size="50" placeholder="Nome">
+<fieldset style="width: 50px; margin: 0 auto;margin-top: 180px; padding: 10px 10px 10px 10px;">
+ <legend class="Tamletra">Cadastro Usuário</legend>
+<label>Nome</label>
+            <input type="text"  name="nome"  placeholder="Nome" required>
             <br><br>
                     
-        	 
-            <input type="text" size="55" name="email" placeholder="Email">
-            <br><br>
-	        
-	          <input type="password" size="55" name="senha" placeholder="Senha">
-            <br><br>
+<label>Email</label>
 
-            
-			
+            <input type="text"  name="email" placeholder="Email" required>
+            <br><br>
+<label>Senha</label>
+	          <input type="password"  name="senha" placeholder="Senha" required>
+            <br><br>
+               
   
 
-                <input type="submit" Value="Cadastrar">
+                <input type="submit" name="butao" Value="Cadastrar">
                 <input type="reset" value="Limpar">
                 <input type="button" value="Voltar" onClick="history.go(-1)"> 
-</fieldset>
   </form>
-        
+        </fieldset>
   </div>
 		
 		

@@ -6,12 +6,13 @@ $con = mysql_connect($host,$user,$pass) or die(mysql_error());
 $bd = "clube";
 mysql_select_db($bd) or die(mysql_error());
 ?>
+
 <html>
 <head>
 	<title>Autenticando usuario</title>
 	<script type="text/javascript">
 		function loginsuccessfully(){
-			setTimeout("window.location='html/perfil.html'",1000);
+			setTimeout("window.location='perfil.php'",1000);
 		}
 		function loginfaield(){
 			setTimeout("window.location='login.php'",1000);

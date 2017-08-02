@@ -16,12 +16,18 @@ mysql_select_db($bd) or die(mysql_error());
 <body>
 
 <?php
+$erro = false;
 $nome =  $_POST['nome'];
 $login =  $_POST['email'];
 $senha =  $_POST['senha'];
 $sql = mysql_query("INSERT INTO usuario(nome,email,senha) VALUES ('$nome', '$login', '$senha')");
 echo "Cadastro efetuado com sucesso!";
-
+if ( ( ! isset( $login ) || ! filter_var( $login, FILTER_VALIDATE_EMAIL ) ) && !$erro ) {
+ $erro = 'Envie um email válido.';
+}
 ?>
+<form>
+                <input type="button" value="Voltar" onClick="history.go(-1)"> 
+</form>
 </body>
 </html>

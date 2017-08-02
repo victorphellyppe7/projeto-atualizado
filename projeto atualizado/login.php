@@ -1,22 +1,35 @@
-<?php
-require("nav/header.php");
-?>
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <META charset="UTF-8"> 
+        <title>Clube do Livro </title>
+        <link href="css/clube.css" rel="stylesheet">
+       
+    </head>
+    <body class="fundo">
 
 	<br><br><br><br><br>
-	<div class="geral">      
- 	<form name="autentication" method="post" action="autentication.php">
+	<div class="geral">  
+
+
+
+   <fieldset>
+       <legend>Login</legend>
+<form name="autentication" method="post" action="autentication.php">
 
     	
-        <td><input type="text" placeholder="Email" name="email"></td></tr>
+        <td><input type="text" placeholder="Email" name="email" required></td></tr>
 
-	    	<td><input type="password" placeholder="senha" name="senha"></td></tr>
+	    	<td><input type="password" placeholder="senha" name="senha" required></td></tr>
 
-    	<tr><td><input type="submit" value="Entrar"></td></tr>
+    	<tr><td><input type="submit" name="botao" value="Entrar"></td></tr>
                         <input type="button" value="Voltar" onClick="history.go(-1)"> 
 
 	
-    </table>
-    </form>
+</form>
+   </fieldset>
+
     <br><br>
     	
 </div>        
